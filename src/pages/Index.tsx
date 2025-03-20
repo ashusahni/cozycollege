@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, MapPin, Star, BookOpen, Coffee, Users, Building, Shield } from 'lucide-react';
@@ -8,14 +7,14 @@ import SearchBar from '@/components/SearchBar';
 import PropertyCard from '@/components/PropertyCard';
 import { cn } from '@/lib/utils';
 
-// Sample property data
+// Sample property data with Indian context
 const featuredProperties = [
   {
     id: '1',
-    name: 'Sunset Residence Hall',
-    location: 'North Campus, Berkeley',
-    distance: '0.3 miles',
-    price: 850,
+    name: 'Sharma Residence Hall',
+    location: 'North Campus, Delhi University',
+    distance: '0.3 km',
+    price: 12500,
     rating: 4.8,
     reviews: 124,
     image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop',
@@ -24,10 +23,10 @@ const featuredProperties = [
   },
   {
     id: '2',
-    name: 'College View Apartments',
-    location: 'West Village, Davis',
-    distance: '0.5 miles',
-    price: 750,
+    name: 'Laxmi Nagar PG',
+    location: 'East Delhi, Near IP University',
+    distance: '0.5 km',
+    price: 9500,
     rating: 4.6,
     reviews: 89,
     image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop',
@@ -36,10 +35,10 @@ const featuredProperties = [
   },
   {
     id: '3',
-    name: 'Campus Corner Lodge',
-    location: 'Southside, Berkeley',
-    distance: '0.2 miles',
-    price: 920,
+    name: 'IIT Bombay Campus Lodge',
+    location: 'Powai, Mumbai',
+    distance: '0.2 km',
+    price: 14000,
     rating: 4.9,
     reviews: 156,
     image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2080&auto=format&fit=crop',
@@ -52,7 +51,7 @@ const featureData = [
   {
     icon: <MapPin className="h-8 w-8" />,
     title: 'Location-Based Search',
-    description: 'Find PGs based on their proximity to your college or university.'
+    description: 'Find PGs based on their proximity to your college or university across India.'
   },
   {
     icon: <Star className="h-8 w-8" />,
@@ -67,7 +66,7 @@ const featureData = [
   {
     icon: <Coffee className="h-8 w-8" />,
     title: 'Amenities Filter',
-    description: 'Filter PGs based on the amenities that matter most to you.'
+    description: 'Filter PGs based on amenities like AC, geyser, food options, and more.'
   },
   {
     icon: <Users className="h-8 w-8" />,
@@ -77,7 +76,7 @@ const featureData = [
   {
     icon: <Building className="h-8 w-8" />,
     title: 'Property Comparison',
-    description: 'Compare multiple properties side by side to make informed decisions.'
+    description: 'Compare multiple PGs side by side to make informed decisions.'
   }
 ];
 

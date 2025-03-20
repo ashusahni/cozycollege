@@ -47,7 +47,7 @@ const ServiceCard = ({
           className="absolute top-3 left-3 capitalize" 
           variant={type === 'laundry' ? 'default' : 'secondary'}
         >
-          {type}
+          {type === 'laundry' ? 'Laundry' : 'Tiffin Service'}
         </Badge>
       </div>
       
