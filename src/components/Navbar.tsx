@@ -44,7 +44,7 @@ const Navbar = () => {
           to="/" 
           className="text-2xl font-semibold flex items-center gap-2 transition-transform duration-300 hover:scale-[1.02]"
         >
-          <span className="text-gradient">CozyCollege</span>
+          <span className="text-gradient">roomates</span>
         </Link>
 
         {/* Desktop Navigation */}

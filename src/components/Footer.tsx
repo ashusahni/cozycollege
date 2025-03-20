@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="text-2xl font-semibold inline-block">
-              <span className="text-gradient">CozyCollege</span>
+              <span className="text-gradient">roomates</span>
             </Link>
             <p className="text-muted-foreground text-sm mt-2">
               Making student housing search simple, reliable, and stress-free.
@@ -25,8 +25,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-muted-foreground mr-2" />
-                <a href="mailto:info@cozycollege.com" className="hover:text-primary transition-colors">
-                  info@cozycollege.com
+                <a href="mailto:info@roomates.com" className="hover:text-primary transition-colors">
+                  info@roomates.com
                 </a>
               </div>
               <div className="flex items-center">
@@ -128,7 +128,7 @@ const Footer = () => {
         <Separator className="my-8" />
 
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} CozyCollege. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} roomates. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
             <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
