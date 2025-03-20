@@ -79,33 +79,33 @@ const About = () => {
             {[
               {
                 icon: <MapPin className="h-8 w-8" />,
-                title: 'Location-Based Search',
-                description: 'Find PGs based on their proximity to your college or university with our precise mapping tools.'
+                title: "Location-Based Search",
+                description: "Find PGs based on their proximity to your college or university with our precise mapping tools."
               },
               {
                 icon: <Star className="h-8 w-8" />,
-                title: 'Verified Reviews',
-                description: 'Make decisions based on authentic reviews from students who have lived in the accommodations.'
+                title: "Verified Reviews",
+                description: "Make decisions based on authentic reviews from students who have lived in the accommodations."
               },
               {
                 icon: <BookOpen className="h-8 w-8" />,
-                title: 'Detailed Information',
-                description: 'Access comprehensive details about amenities, rules, meal plans, and pricing for each property.'
+                title: "Detailed Information",
+                description: "Access comprehensive details about amenities, rules, meal plans, and pricing for each property."
               },
               {
                 icon: <Coffee className="h-8 w-8" />,
-                title: 'Amenities Filter',
-                description: 'Easily filter PGs based on the amenities that matter most to your daily routine and lifestyle.'
+                title: "Amenities Filter",
+                description: "Easily filter PGs based on the amenities that matter most to your daily routine and lifestyle."
               },
               {
                 icon: <Users className="h-8 w-8" />,
-                title: 'Roommate Matching',
-                description: 'Find compatible roommates based on preferences, lifestyle, and academic schedules.'
+                title: "Roommate Matching",
+                description: "Find compatible roommates based on preferences, lifestyle, and academic schedules."
               },
               {
                 icon: <Building className="h-8 w-8" />,
-                title: 'Property Comparison',
-                description: 'Compare multiple properties side by side to make informed decisions about your housing.'
+                title: "Property Comparison",
+                description: "Compare multiple properties side by side to make informed decisions about your housing."
               }
             ].map((feature, index) => (
               <div
@@ -132,10 +132,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
-              { value: '10,000+', label: 'Listed Properties' },
-              { value: '500+', label: 'Campuses Covered' },
-              { value: '50,000+', label: 'Happy Students' },
-              { value: '5,000+', label: 'Verified Reviews' }
+              { value: "10,000+", label: "Listed Properties" },
+              { value: "500+", label: "Campuses Covered" },
+              { value: "50,000+", label: "Happy Students" },
+              { value: "5,000+", label: "Verified Reviews" }
             ].map((stat, index) => (
               <div key={index} className="p-6 rounded-xl glass-card animate-fade-in" style={{ animationDelay: `${index * 150}ms` }}>
                 <p className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</p>
@@ -162,20 +162,20 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: 'Transparency',
-                description: 'We believe in full transparency about properties, pricing, and policies, so students can make informed decisions.'
+                title: "Transparency",
+                description: "We believe in full transparency about properties, pricing, and policies, so students can make informed decisions."
               },
               {
-                title: 'Reliability',
-                description: 'Our platform provides verified information you can trust, vetted by our dedicated team and community.'
+                title: "Reliability",
+                description: "Our platform provides verified information you can trust, vetted by our dedicated team and community."
               },
               {
-                title: 'Accessibility',
-                description: 'We're committed to making quality accommodation information accessible to all students, regardless of background.'
+                title: "Accessibility",
+                description: "We're committed to making quality accommodation information accessible to all students, regardless of background."
               },
               {
-                title: 'Community',
-                description: 'We foster a supportive community of students sharing experiences and insights about housing options.'
+                title: "Community",
+                description: "We foster a supportive community of students sharing experiences and insights about housing options."
               }
             ].map((value, index) => (
               <div key={index} className="flex gap-4 animate-fade-in-left" style={{ animationDelay: `${index * 150}ms` }}>
@@ -209,28 +209,28 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: 'Alex Morgan',
-                role: 'Founder & CEO',
-                image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1780&auto=format&fit=crop',
-                bio: 'Former student who experienced firsthand the challenges of finding good accommodation.'
+                name: "Alex Morgan",
+                role: "Founder & CEO",
+                image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1780&auto=format&fit=crop",
+                bio: "Former student who experienced firsthand the challenges of finding good accommodation."
               },
               {
-                name: 'Priya Sharma',
-                role: 'CTO',
-                image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop',
-                bio: 'Tech expert passionate about solving real-world problems through innovative solutions.'
+                name: "Priya Sharma",
+                role: "CTO",
+                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop",
+                bio: "Tech expert passionate about solving real-world problems through innovative solutions."
               },
               {
-                name: 'Marcus Chen',
-                role: 'Head of Operations',
-                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop',
-                bio: 'Operations specialist with extensive experience in property management and customer service.'
+                name: "Marcus Chen",
+                role: "Head of Operations",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop",
+                bio: "Operations specialist with extensive experience in property management and customer service."
               },
               {
-                name: 'Sophia Williams',
-                role: 'Community Manager',
-                image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1922&auto=format&fit=crop',
-                bio: 'Former student housing advisor dedicated to building a supportive community of users.'
+                name: "Sophia Williams",
+                role: "Community Manager",
+                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1922&auto=format&fit=crop",
+                bio: "Former student housing advisor dedicated to building a supportive community of users."
               }
             ].map((member, index) => (
               <div key={index} className="glass-card rounded-xl overflow-hidden animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>

@@ -2,13 +2,14 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PropertyDetails from '@/components/PropertyDetails';
+import { Button } from '@/components/ui/button';
 
 // Dummy property data for demonstration
 const propertyData = {
   '1': {
     id: '1',
     name: 'Sunset Residence Hall',
-    description: 'Sunset Residence Hall is a premier student accommodation located just a short walk from the main campus. Our modern facility offers a blend of comfort and convenience with fully furnished rooms, high-speed internet, and a vibrant community space. Perfect for students who want to focus on their studies while enjoying a dynamic social environment.\n\nThe hall features 24/7 security, regular cleaning services, and dedicated study areas. Our in-house cafeteria serves nutritious meals throughout the day, catering to various dietary preferences. We also organize regular social events to help students network and build lasting relationships.',
+    description: "Sunset Residence Hall is a premier student accommodation located just a short walk from the main campus. Our modern facility offers a blend of comfort and convenience with fully furnished rooms, high-speed internet, and a vibrant community space. Perfect for students who want to focus on their studies while enjoying a dynamic social environment.\n\nThe hall features 24/7 security, regular cleaning services, and dedicated study areas. Our in-house cafeteria serves nutritious meals throughout the day, catering to various dietary preferences. We also organize regular social events to help students network and build lasting relationships.",
     location: 'North Campus, Berkeley',
     distance: '0.3 miles',
     price: 850,
@@ -66,7 +67,7 @@ const propertyData = {
   '2': {
     id: '2',
     name: 'College View Apartments',
-    description: 'College View Apartments offers modern living spaces designed specifically for students. Located in the heart of West Village, our apartments provide the perfect balance of privacy and community. Each unit comes with high-speed internet, modern appliances, and comfortable furnishings to make your college experience as smooth as possible.\n\nOur community features include a fitness center, study lounges, and outdoor recreation areas. We're committed to creating a safe and supportive environment where students can thrive academically and socially. Regular maintenance and dedicated property management ensure that you can focus on your studies without worrying about housing issues.',
+    description: "College View Apartments offers modern living spaces designed specifically for students. Located in the heart of West Village, our apartments provide the perfect balance of privacy and community. Each unit comes with high-speed internet, modern appliances, and comfortable furnishings to make your college experience as smooth as possible.\n\nOur community features include a fitness center, study lounges, and outdoor recreation areas. We're committed to creating a safe and supportive environment where students can thrive academically and socially. Regular maintenance and dedicated property management ensure that you can focus on your studies without worrying about housing issues.",
     location: 'West Village, Davis',
     distance: '0.5 miles',
     price: 750,
@@ -124,7 +125,7 @@ const propertyData = {
   '3': {
     id: '3',
     name: 'Campus Corner Lodge',
-    description: 'Campus Corner Lodge represents the pinnacle of student living. Situated just 0.2 miles from Southside Berkeley campus, our lodge combines luxurious accommodations with a supportive academic environment. Each room is meticulously designed with modern furnishings, natural lighting, and spacious layouts to enhance your college experience.\n\nWe pride ourselves on our all-inclusive approach, with utilities, high-speed internet, and weekly cleaning all covered in your rent. Our community spaces include quiet study rooms, collaboration areas, and leisure facilities. The on-site cafeteria serves three meals daily with diverse menu options to cater to all dietary needs and preferences.',
+    description: "Campus Corner Lodge represents the pinnacle of student living. Situated just 0.2 miles from Southside Berkeley campus, our lodge combines luxurious accommodations with a supportive academic environment. Each room is meticulously designed with modern furnishings, natural lighting, and spacious layouts to enhance your college experience.\n\nWe pride ourselves on our all-inclusive approach, with utilities, high-speed internet, and weekly cleaning all covered in your rent. Our community spaces include quiet study rooms, collaboration areas, and leisure facilities. The on-site cafeteria serves three meals daily with diverse menu options to cater to all dietary needs and preferences.",
     location: 'Southside, Berkeley',
     distance: '0.2 miles',
     price: 920,
