@@ -79,7 +79,7 @@ const ServiceCard = ({
         
         <div className="mt-3">
           <div className="font-medium">
-            {type === 'laundry' ? 'Services from' : 'Meals from'} <span className="text-primary">{price}</span>
+            {type === 'laundry' ? 'Services from' : 'Meals from'} <span className="text-primary">{price.replace('$', '₹')}</span>
           </div>
           <div className="flex flex-wrap gap-1 mt-2">
             {features.slice(0, 3).map((feature, i) => (

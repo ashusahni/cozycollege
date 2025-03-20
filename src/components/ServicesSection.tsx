@@ -5,22 +5,22 @@ import { Input } from '@/components/ui/input';
 import { Search, ShowerHead, UtensilsCrossed } from 'lucide-react';
 import ServiceCard, { ServiceCardProps } from './ServiceCard';
 
-// Dummy data for services
+// Dummy data for services with Indian context
 const laundryServices: ServiceCardProps[] = [
   {
     id: 'l1',
     name: 'QuickWash Laundry',
     type: 'laundry',
-    description: 'Fast and affordable laundry service with free pickup and delivery for orders above $20.',
+    description: 'Fast and affordable laundry service with free pickup and delivery for orders above ₹500.',
     image: 'https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=2071&auto=format&fit=crop',
     rating: 4.8,
     reviews: 42,
-    price: '$5/kg',
-    distance: '0.2 miles',
-    address: '123 College Ave',
+    price: '₹60/kg',
+    distance: '0.2 km',
+    address: '123 College Road',
     hours: 'Open 8AM - 9PM daily',
     features: ['Wash & Fold', 'Dry Cleaning', 'Express Service', 'Free Delivery'],
-    contactNumber: '(123) 456-7890'
+    contactNumber: '(+91) 98765-43210'
   },
   {
     id: 'l2',
@@ -30,12 +30,12 @@ const laundryServices: ServiceCardProps[] = [
     image: 'https://images.unsplash.com/photo-1521656693074-0ef32e80a5d5?q=80&w=2070&auto=format&fit=crop',
     rating: 4.6,
     reviews: 38,
-    price: '$7/kg',
-    distance: '0.4 miles',
+    price: '₹70/kg',
+    distance: '0.4 km',
     address: '456 University Blvd',
     hours: 'Open 7AM - 8PM Mon-Sat',
     features: ['Student Discount', 'Eco-Friendly', 'Stain Removal', 'Ironing'],
-    contactNumber: '(234) 567-8901'
+    contactNumber: '(+91) 87654-32109'
   },
   {
     id: 'l3',
@@ -45,12 +45,12 @@ const laundryServices: ServiceCardProps[] = [
     image: 'https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?q=80&w=2070&auto=format&fit=crop',
     rating: 4.9,
     reviews: 56,
-    price: '$8/kg',
-    distance: '0.5 miles',
+    price: '₹80/kg',
+    distance: '0.5 km',
     address: '789 Academic Drive',
     hours: 'Open 9AM - 7PM daily',
     features: ['Same-Day Service', 'Subscription Plans', 'Shoe Cleaning', 'Alterations'],
-    contactNumber: '(345) 678-9012'
+    contactNumber: '(+91) 76543-21098'
   }
 ];
 
@@ -59,46 +59,46 @@ const mealServices: ServiceCardProps[] = [
     id: 'm1',
     name: 'HomeCook Tiffin',
     type: 'meal',
-    description: 'Authentic home-cooked meals delivered daily with flexible subscription plans for students.',
+    description: 'Authentic home-cooked Indian meals delivered daily with flexible subscription plans for students.',
     image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=2067&auto=format&fit=crop',
     rating: 4.7,
     reviews: 64,
-    price: '$7/meal',
-    distance: '0.3 miles',
+    price: '₹70/meal',
+    distance: '0.3 km',
     address: '234 Student Lane',
     hours: 'Delivery 11AM - 1PM, 5PM - 7PM',
     features: ['Vegetarian Options', 'Monthly Plans', 'Custom Menu', 'Weekend Special'],
-    contactNumber: '(456) 789-0123'
+    contactNumber: '(+91) 65432-10987'
   },
   {
     id: 'm2',
     name: 'Nutrition Box',
     type: 'meal',
-    description: 'Healthy, balanced meals prepared by nutritionists specifically for students and busy professionals.',
+    description: 'Healthy, balanced North and South Indian meals prepared by nutritionists specifically for students.',
     image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080&auto=format&fit=crop',
     rating: 4.8,
     reviews: 52,
-    price: '$9/meal',
-    distance: '0.7 miles',
+    price: '₹90/meal',
+    distance: '0.7 km',
     address: '567 Health Avenue',
     hours: 'Delivery 12PM - 2PM, 6PM - 8PM',
     features: ['Protein Rich', 'Calorie Controlled', 'Gluten Free', 'Keto Options'],
-    contactNumber: '(567) 890-1234'
+    contactNumber: '(+91) 54321-09876'
   },
   {
     id: 'm3',
     name: 'Campus Bites',
     type: 'meal',
-    description: 'Quick, affordable meal options with a focus on local flavors and student-friendly prices.',
+    description: 'Quick, affordable meal options with a focus on local Indian flavors and student-friendly prices.',
     image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop',
     rating: 4.5,
     reviews: 78,
-    price: '$6/meal',
-    distance: '0.2 miles',
+    price: '₹60/meal',
+    distance: '0.2 km',
     address: '890 College Corner',
     hours: 'Delivery 11:30AM - 9PM daily',
     features: ['Budget Friendly', 'Late Night', 'Weekly Plan', 'Group Orders'],
-    contactNumber: '(678) 901-2345'
+    contactNumber: '(+91) 43210-98765'
   }
 ];
 
@@ -142,7 +142,7 @@ const ServicesSection = () => {
           </TabsTrigger>
           <TabsTrigger value="meals" className="flex items-center gap-2">
             <UtensilsCrossed className="h-4 w-4" />
-            <span>Meal Services</span>
+            <span>Tiffin Services</span>
           </TabsTrigger>
         </TabsList>
         
@@ -169,7 +169,7 @@ const ServicesSection = () => {
             </div>
           ) : (
             <div className="text-center py-10">
-              <p className="text-muted-foreground">No meal services match your search.</p>
+              <p className="text-muted-foreground">No tiffin services match your search.</p>
             </div>
           )}
         </TabsContent>

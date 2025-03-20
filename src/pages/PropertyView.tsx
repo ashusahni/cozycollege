@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PropertyDetails from '@/components/PropertyDetails';
+import ServicesSection from '@/components/ServicesSection';
 import { Button } from '@/components/ui/button';
 
 // Dummy property data for demonstration with Indian context
@@ -213,6 +214,7 @@ const PropertyView = () => {
   return (
     <div className="min-h-screen pt-24 px-6 md:px-8 lg:px-12">
       <PropertyDetails {...property} />
+      <ServicesSection />
     </div>
   );
 };

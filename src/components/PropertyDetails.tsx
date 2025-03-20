@@ -226,7 +226,7 @@ const PropertyDetails = ({
             <div className="flex-1 min-w-[180px]">
               <h3 className="text-lg font-medium mb-1">Price</h3>
               <div className="flex items-baseline gap-1">
-                <span className="text-2xl font-semibold">${price}</span>
+                <span className="text-2xl font-semibold">₹{price}</span>
                 <span className="text-muted-foreground">/month</span>
               </div>
               <p className="text-sm text-muted-foreground mt-1">Includes utilities and maintenance</p>
@@ -351,22 +351,22 @@ const PropertyDetails = ({
             <div className="space-y-3">
               <div className="flex justify-between items-center">
                 <span className="text-muted-foreground">Monthly rent</span>
-                <span className="font-medium">${price}</span>
+                <span className="font-medium">₹{price}</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-muted-foreground">Security deposit</span>
-                <span className="font-medium">${price}</span>
+                <span className="font-medium">₹{price}</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-muted-foreground">Application fee</span>
-                <span className="font-medium">$50</span>
+                <span className="font-medium">₹500</span>
               </div>
               
               <Separator className="my-2" />
               
               <div className="flex justify-between items-center">
                 <span className="font-medium">Move-in cost</span>
-                <span className="font-semibold">${price * 2 + 50}</span>
+                <span className="font-semibold">₹{price * 2 + 500}</span>
               </div>
             </div>
             
