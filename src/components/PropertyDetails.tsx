@@ -30,6 +30,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { cn } from '@/lib/utils';
+import ChatDialog from './ChatDialog';
 
 export interface PropertyDetailsProps {
   id: string;
@@ -339,6 +340,7 @@ const PropertyDetails = ({
                   {landlord.email}
                 </a>
               </Button>
+              <ChatDialog propertyName={name} landlord={landlord} />
               <Button className="w-full">Book a viewing</Button>
             </div>
           </div>

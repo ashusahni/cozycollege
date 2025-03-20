@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PropertyDetails from '@/components/PropertyDetails';
 import { Button } from '@/components/ui/button';
+import ServicesSection from '@/components/ServicesSection';
 
 // Dummy property data for demonstration
 const propertyData = {
@@ -212,7 +213,10 @@ const PropertyView = () => {
 
   return (
     <div className="min-h-screen pt-24 px-6 md:px-8 lg:px-12">
-      <PropertyDetails {...property} />
+      <div className="max-w-5xl mx-auto">
+        <PropertyDetails {...property} />
+        <ServicesSection />
+      </div>
     </div>
   );
 };
